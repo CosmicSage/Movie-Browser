@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 1098,
+  "expoServerNgrokUrl": "https://bg-975.coldlinux.project2.exp.direct",
+  "packagerNgrokUrl": "https://packager.bg-975.coldlinux.project2.exp.direct",
+  "ngrokPid": 1206,
   "webpackServerPort": null
 }

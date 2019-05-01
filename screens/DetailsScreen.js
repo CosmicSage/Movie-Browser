@@ -1,11 +1,13 @@
 import React from "react";
-import {Ratings} from "./Movie.js";
 import {Text, View, Image, ScrollView, StyleSheet, Dimensions} from "react-native";
+import {Ratings} from "./Movie.js";
 const screen = Dimensions.get("window");
+
 export default class DetailsScreen extends React.Component {
   state = {
     Movie : {}
   }
+
   static navigationOptions = ({ navigation }) => {
   return {
     title: navigation.getParam('Title', 'Info Unavialable'),
@@ -43,7 +45,7 @@ export default class DetailsScreen extends React.Component {
           <Text>{this.state.Movie.Rated},  {this.state.Movie.Runtime}</Text>
           <Text style={styles.Plot}>{this.state.Movie.Plot}</Text>
         </View>
-        <Text style={{color : "green", fontSize : 30}}>|||||||||||||||||||||||||||||||||||||||||||</Text>
+        <Ratings ratings={this.state.Movie.Ratings}/>
       </ScrollView>
     );
   }

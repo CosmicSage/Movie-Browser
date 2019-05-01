@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "project2",
+    "name": "Project2",
     "slug": "project2",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Movie Browser | Search Movies",
+    "githubUrl": "https://github.com/CosmicSage/Project2.git"
   }
 }

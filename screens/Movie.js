@@ -2,9 +2,12 @@ import React from "react";
 import {Text, Image, TouchableOpacity, View, Dimensions} from "react-native";
 
 export const Ratings = props => {
-  console.log(props.sources);
-  const Array = props.sources.map(rating => (<Text>rating.Source</Text>));
-  return Array;
+  return array = (props.ratings || []).map(rating => (
+    <View style={{paddingLeft : 5, flexDirection : "row", paddingTop : 30, paddingBottom : 20}}>
+      <Text style={{ fontWeight : "600", fontSize : 18}}>{rating.Source}: </Text>
+      <Text style={{fontSize : 18}}>{rating.Value}</Text>
+    </View>
+  ));
 }
 
 const Movie = props => {
