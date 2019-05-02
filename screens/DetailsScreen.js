@@ -7,11 +7,17 @@ export default class DetailsScreen extends React.Component {
   state = {
     Movie : {}
   }
-
+  /** navigation.state.index is undefined
+      Therefore used routeName
+  **/
   static navigationOptions = ({ navigation }) => {
-  return {
+  navigationOptions = {
     title: navigation.getParam('Title', 'Info Unavialable'),
   };
+  if (navigation.state.routeName === "Details") {
+    navigationOptions.tabBarVisible = false;
+  }
+  return navigationOptions;
 };
 
   componentDidMount () {
