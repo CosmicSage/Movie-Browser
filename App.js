@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import {createStackNavigator, createAppContainer} from "react-navigation";
 import {createMaterialBottomTabNavigator} from "react-navigation-material-bottom-tabs";
 import HomeScreen from "./screens/HomeScreen.js";
@@ -11,9 +10,18 @@ const StackNavigator = createStackNavigator({
   Details : DetailsScreen
 }, {initialRouteName : "Home", navigationOptions : {headerStyle : {backgroundColor : "#f4511e"}}});
 
+StackNavigator.navigationOptions = ({ navigation }) => {
+  const { state : { routes, index }} = navigation;
+  let tabBarVisible = true;
+  if (routes[index].routeName === "Details") {
+    tabBarVisible = false;
+  }
+  return { tabBarVisible };
+}
+
 const TabNavigator = createMaterialBottomTabNavigator({
-  Tab1 : StackNavigator,
-  Tab2 : SettingsPage
+  Home : StackNavigator,
+  SettingsPage : SettingsPage
 }, {activeColor : "green"});
 
 const AppContainer = createAppContainer(TabNavigator);

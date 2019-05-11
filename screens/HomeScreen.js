@@ -61,9 +61,7 @@ export default class HomeScreen extends React.Component {
   navigate = (ID) => {
     this.props.navigation.navigate("Details", {imdbID : ID});
   }
-  About = () => {
-    alert("Search Movies and Find its info");
-  }
+  About = () => alert("Search Movies and Find its info");
 }
 
 export const styles = StyleSheet.create({

@@ -11,13 +11,9 @@ export default class DetailsScreen extends React.Component {
       Therefore used routeName
   **/
   static navigationOptions = ({ navigation }) => {
-  navigationOptions = {
-    title: navigation.getParam('Title', 'Info Unavialable'),
-  };
-  if (navigation.state.routeName === "Details") {
-    navigationOptions.tabBarVisible = false;
-  }
-  return navigationOptions;
+    return {
+      title: navigation.getParam('Title', 'Info Unavialable'),
+    };
 };
 
   componentDidMount () {
