@@ -1,26 +1,24 @@
 # Project 2 - Movie Browser
-For this project, you'll be implementing a movie browser. It will allow users to
+This project will allow users to
 search for movies included in the [Open Movie Database](http://www.omdbapi.com/)
 and view additional information about any movies they select. Check out the
-[staff solution](#staff-solution) for a working version.
+[snack](https://expo.io/@coldlinux/project2) for a working version.
 
 ## Requirements
-- You may not import libraries other than the below:
+- The Program imports the following libraries:
   - `expo`
   - `react`
   - `react-native`
   - `prop-types`
   - `react-navigation`
   - Any library for icons
-- There should be at least one `StackNavigator`
-- There should be a search screen that allows users to search for movies
-  - You should show more than 10 results if more than 10 results exist
-- There should be a screen that shows additional information about a selected movie
+- There is one `StackNavigator` and a `tabNavigator`(which is broken)
+- a search screen that allows users to search for movies
+  - more than 10 results are displayed if more than 10 results exist
+- a screen that shows additional information about a selected movie
 
-The aesthetics of the app are up to you!
+The aesthetics of the app are great!
 
-### Challenge (Not Required)
-- Coming soon!
 
 ## Getting Started
 First, head to [this link](https://docs.expo.io/versions/latest/introduction/installation.html)
@@ -56,14 +54,9 @@ in the top right. To open on your phone, click the `Share` button and scan the
 QR code from the Expo app on your phone. To open in a simulator, click the `Device`
 button and select the simulator into which you want to open your app.
 
-When you have the app open in your phone or simulator, try opening [`App.js`](/App.js)
-and changing a line. You should see it update on your phone!
-
-If you want to get started before we talk about data fetching in the next lecture,
-you can use the mock data defined in [`mockData.js`](./mockData.js).
 
 Good luck!
 
-## Staff Solution
-If you want to play with the staff implementation, you can view it using
-Snack at [@jhhayashi/project2-solution](https://snack.expo.io/@jhhayashi/project2-solution).
+## Solution
+If you want to play with the implementation, you can view it using
+Snack at [/@coldlinux/project2](https://expo.io/@coldlinux/project2).
