@@ -4,7 +4,7 @@ import {Switch, Text, View, StyleSheet} from "react-native";
 class SettingsPage extends React.Component {
   state = {
     bool : false,
-    randomDanOpo : "dfd"
+    randomDanOpo : "dfdd"
   }
   Change = () => {
     this.setState(prevState => ({
